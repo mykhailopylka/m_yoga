@@ -2,532 +2,1036 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Yoga tour</title>
-    <link rel="icon" href="images/logo.ico" type="images/png" />
-    <link rel="stylesheet" href="fonts/stylesheet.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/grid.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
-  </head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link type="text/css" rel="stylesheet" href="css/stile.css" />
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+		<link type="text/css" rel="stylesheet" href="css/jquery.fancybox.min.css" />
+		<!-- <link rel="stylesheet" href="css/media.css" media="only screen and (max-width:1900px)"> -->
+    <link rel="icon" href="image/min-logo.png" type="images/png" />
+    <title>Yoga tour</title>
+  </head> 
   <body>
+    <!--======================Шапка===========================-->
     <header class="header">
       <div class="container">
         <div class="header__body">
-          <a href="#" class="header__logo">
-            <img src="images/Logo.png" alt="" />
+          <a href="index.html" class="header__logo logo">
+            <img src="image/logo.png" alt="logo" />
           </a>
           <div class="header__burger">
             <span></span>
           </div>
           <nav class="header__menu">
             <ul class="header__list">
-              <li><a class="header__link" href="index.html">Головна</a></li>
-              <li><a class="header__link" href="about.html">Про нас</a></li>
-              <li><a class="header__link" href="tours.html">Тури</a></li>
-              <li><a class="header__link" href="ayurveda.html">Аюрведа</a></li>
-              <li><a class="header__link" href="contacts.html">Контакти</a></li>
+              <li><a class="header__link" href="#">Головна</a></li>
+              <li><a class="header__link" href="#about">Про нас</a></li>
+              <li><a class="header__link" href="#tours">Тури</a></li>
+              <li><a class="header__link" href="#ayurveda">Аюрведа</a></li>
+              <li><a class="header__link" href="#contacts">Контакти</a></li>
             </ul>
           </nav>
         </div>
       </div>
-      <!-- header__content ===================-->
-      <class class="header__content">
-        <img src="images/block1.jpg" alt="photo" />
-
-        <div class="header__content-discription">
-          <h1>
-            ЙОГА-ТУРИ В ІНДІЮ
-          </h1>
-          <h2>
-            ОКЕАН / ЙОГА / ПОДОРОЖІ / АЮРВЕДА
-          </h2>
-          <p>
-            Індія, штат Кералла, узбережжя океану
-          </p>
-          <div class="header__content-button">
-            <a href="#">Подати заявку</a>
-          </div>
-          <div class="header__content-social">
-            <ul>
-              <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </class>
     </header>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/main.js"></script>
-    <main class="main">
-      <div class="wrapper properties">
-        <div class="container container-background">
-          <section class="about m-grid">
-            <div>
-              <img src="images/p1.png" alt="foto" />
-            </div>
-            <div class="about__discription">
-              <h3>
-                Що таке йога?
-              </h3>
-              <h2>
-                ЙОГА ТУР?
-              </h2>
-              <p>
-                Йога-тур - це новий вид туризму, коли з подорожжю в іншу країну
-                поєднуються заняття з йоги. Ви відпочиваєте на морі, відвідуєте
-                цікаві місця, кілька разів на день займаєтеся йогою і проводите
-                відпустку в цікавій компанії. Тепер відпочинок став цікавим і
-                корисним для тіла і душі.
-              </p>
-              <ul>
-                <li>
-                  <a href="#">
-                    <img
-                      src="images/about/1448406663_Yoga_Mat.png"
-                      alt="yoga"
-                    />
-                    ЙОГА
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="images/about/26-64.png" alt="sea" />
-                    МОРЕ
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="images/about/1448406847_paper-plane-1.png"
-                      alt="plane"
-                    />
-                    ПОДОРОЖІ
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <!-- /conteiner -->
+    <!--======================Контент===========================-->
+    <main>
+    <div class="full-sckrin">
+      <div class="container">
+        <div class="yoga-info">
+          <h1>Йога-тури в Індію</h1>
+          <h3 class="yoga-info__subtitle">океан / йога / мандри / аюрведа</h3>
+          <p class="yoga-info__description">
+            Індія, штат Керала, узбережжя океану
+          </p>
+          <form action="#" method="post">
+            <button type="submit">Подати заявку</button>
+          </form>
+          <div class="yoga-info__socium">
+            <a href=""><img src="image/header/2.png" alt="" /></a>
+            <a href=""><img src="image/header/3.png" alt="" /></a>
+          </div>
         </div>
-        <!-- /wrapper -->
       </div>
-      <!-- Yoga Tour=============================== -->
-      <div class="container">
-        <section class="tours c-grid">
-          <h3>
-            5 причин поїхати в йога-тур
-          </h3>
-          <div>
-            <img src="images/tours/1.png" alt="pict" />
-            <p>
-              Провести відпустку цікаво та нестандартно
-            </p>
-          </div>
-          <div>
-            <img src="images/tours/2.png" alt="pict" />
-            <p>
-              Поринути в культуру Індії та взнати країну з середини
-            </p>
-          </div>
-          <div>
-            <img src="images/tours/3.png" alt="pict" />
-            <p>
-              Покращити стан здоров'я
-            </p>
-          </div>
-          <div>
-            <img src="images/tours/4.png" alt="pict" />
-            <p>
-              Позбавитись стресів та перезавантажитись
-            </p>
-          </div>
-          <div>
-            <img src="images/tours/5.png" alt="pict" />
-            <p>
-              Відпочити в хорошій копанії, знайти однодумців
-            </p>
-          </div>
-        </section>
-        <!-- /conteiner -->
-      </div>
-      <!-- slider =========================================-->
-      <div class="wrapper">
-        <section class="slider">
-          <h3>
-            Що мене чекає в подорожі?
-          </h3>
-          <p>СЛАЙДЕР</p>
-        </section>
-        <!-- /wrapper -->
-      </div>
-      <!-- shedule =========================================== -->
-      <div class="container">
-        <section class="shedule s-grid">
-          <h3>
-            Розклад йога-турів
-          </h3>
-          <div class="shedule__items">
-            <span>5-18 червня</span>
-            <p>
-              "Зниження ваги"
-            </p>
-            <div class="shedule__link">
-              <a href="#">Докладніше</a>
-            </div>
-            <div class="shedule__button">
-              <a href="#">Замовити</a>
-            </div>
-          </div>
-          <div class="shedule__items">
-            <span>5-18 червня</span>
-            <p>
-              "Зниження ваги"
-            </p>
-            <div class="shedule__link">
-              <a href="#">Докладніше</a>
-            </div>
-            <div class="shedule__button">
-              <a href="#">Замовити</a>
-            </div>
-          </div>
-          <div class="shedule__items">
-            <span>5-18 червня</span>
-            <p>
-              "Зниження ваги"
-            </p>
-            <div class="shedule__link">
-              <a href="#">Докладніше</a>
-            </div>
-            <div class="shedule__button">
-              <a href="#">Замовити</a>
-            </div>
-          </div>
-          <div class="shedule__items">
-            <span>5-18 червня</span>
-            <p>
-              "Зниження ваги"
-            </p>
-            <div class="shedule__link">
-              <a href="#">Докладніше</a>
-            </div>
-            <div class="shedule__button">
-              <a href="#">Замовити</a>
-            </div>
-          </div>
-          <div class="shedule__items">
-            <span>5-18 червня</span>
-            <p>
-              "Зниження ваги"
-            </p>
-            <div class="shedule__link">
-              <a href="#">Докладніше</a>
-            </div>
-            <div class="shedule__button">
-              <a href="#">Замовити</a>
-            </div>
-          </div>
-          <div class="shedule__items">
-            <span>5-18 червня</span>
-            <p>
-              "Зниження ваги"
-            </p>
-            <div class="shedule__link">
-              <a href="#">Докладніше</a>
-            </div>
-            <div class="shedule__button">
-              <a href="#">Замовити</a>
-            </div>
-          </div>
-          <div class="shedule__items">
-            <span>5-18 червня</span>
-            <p>
-              "Зниження ваги"
-            </p>
-            <div class="shedule__link">
-              <a href="#">Докладніше</a>
-            </div>
-            <div class="shedule__button">
-              <a href="#">Замовити</a>
-            </div>
-          </div>
-          <div class="shedule__items">
-            <span>5-18 червня</span>
-            <p>
-              "Зниження ваги"
-            </p>
-            <div class="shedule__link">
-              <a href="#">Докладніше</a>
-            </div>
-            <div class="shedule__button">
-              <a href="#">Замовити</a>
-            </div>
-          </div>
-        </section>
-        <!-- /conteiner -->
-      </div>
-      <!-- slider =========================================-->
-      <div class="wrapper">
-        <section class="slider">
-          <h3>
-            Программа
-          </h3>
-          <p>СЛАЙДЕР</p>
-        </section>
-        <!-- /wrapper -->
-      </div>
-      <!-- aurveda   =========================================-->
-      <div class="container">
-        <section class="aurveda">
-          <h3>
-            Що таке аюрведа?
-          </h3>
+    </div>
+    <!--======================Йога-тур?===========================-->
+    <div class="info-yoga">			
+			<section class="info-yoga__section container">
+        <div
+          class="info-yoga__img wow fadeInLeft"
+          data-wow-duration="2s"
+          data-wow-offset="100"
+        >
+          <img src="image/section/1.jpeg" alt="yoga" />
+        </div>
+        <article id="about" class="info-yoga__article wow fadeInRight" data-wow-duration="2s"
+          data-wow-offset="100">
+          <h2 class="info-yoga__title">Що таке<br /><span>Йога-тур?</span></h2>
           <p>
-            Аюрведа - це найдавніша медична наука в світі, колосальна технологія
+            Йога-тур – це новий вид туризму, коли з мандрівкою в іншу країну
+            поєднуються заняття з йоги Ви відпочиваєте на морі, відвідуєте
+            цікаві місця, декілька разів на день займаєтесь йогою та проводите
+            відпустку в цікавій компанії. Тепер відпочинок став цікавим для душі
+            та тіла.
+          </p>
+          <ul class="info-yoga__icons">
+            <li><a href="#">йога</a></li>
+            <li><a href="#">море</a></li>
+            <li><a href="#">Мандрівки</a></li>
+          </ul>
+				</article>
+			</section>			
+    </div>    
+    <!--======================5 Причин===========================-->
+    <div class="reasons">
+      <article class="reasons__content container">
+        <div class="reasons__title title">
+          <h2>5 причин поїхати в йога-тур</h2>          
+        </div>
+        <div class="reasons__five">
+          <div class="reasons__five__top wow fadeInLeft"
+            data-wow-duration="2s"
+            data-wow-offset="100" >
+            <div class="reason">
+              <span></span>
+              <p>
+                Провести відпустку нестандартно
+              </p>
+            </div>
+            <div class="reason">
+              <span></span>
+              <p>
+                Пізнати культуру Індії зсередини
+              </p>
+            </div>
+            <div class="reason">
+              <span></span>
+              <p>Покращити здоров'я</p>
+            </div>
+          </div>
+          <div class="reasons__five__bottom wow fadeInRight"
+            data-wow-duration="2s"
+            data-wow-offset="100">
+            <div class="reason">
+              <span></span>
+              <p>
+                Позбавитися стресів <br />
+                та "перезавантажитися"
+              </p>
+            </div>
+            <div class="reason">
+              <span></span>
+              <p>
+                Відпочити у гарній компанії та <br />
+                знайти однодумців
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <!--======================Мандрівки-слайдер 1===========================-->
+    <article class="trevels">
+      <div class="trevels__bg"></div>
+      <div class="trevels__title title container">
+        <h2>На що очікувати у мандрівці?</h2>        
+      </div>
+      <div class="slider">
+        <div class="slider__item item1">
+          <img src="image/slider-1/1.jpeg" alt="1" />
+          <div class="slider__item__text">
+            <p>
+              <span>Аюрведичне лікування</span><br />Усім, хто практикує йогу,
+              рано чи пізно захочеться побувати в ІндіЇ- далекій та загадковій
+              країні, де народилась ця наука про тіло та душу
+            </p>
+          </div>
+        </div>
+        <div class="slider__item item2">
+          <img src="image/slider-1/2.jpeg" alt="2" />
+          <div class="slider__item__text">
+            <p>
+              <span>Аюрведичне лікування</span><br />Усім, хто практикує йогу,
+              рано чи пізно захочеться побувати в ІндіЇ- далекій та загадковій
+              країні, де народилась ця наука про тіло та душу
+            </p>
+          </div>
+        </div>
+        <div class="slider__item item3">
+          <img src="image/slider-1/3.jpeg" alt="3" />
+          <div class="slider__item__text">
+            <p>
+              <span>Аюрведичне лікування</span><br />Усім, хто практикує йогу,
+              рано чи пізно захочеться побувати в ІндіЇ- далекій та загадковій
+              країні, де народилась ця наука про тіло та душу
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!--======================Про компанію===========================-->
+    <article class="company wow fadeInRight"  data-wow-duration="2s"
+      data-wow-offset="400" >
+      <div class="company__title title container">
+        <h2>Чому 1620 туристів обрали нас?</h2>        
+      </div>
+      <div class="grid3__content container">
+        <div class="company__content-part">
+          <img src="image/compani-about/1.png" alt="1" />
+          <h4>Досвід</h4>
+          <p>За 5 років роботи ми відкрили світ йоги для понад 1620 туристів</p>
+        </div>
+        <div class="company__content-part">
+          <img src="image/compani-about/2.png" alt="2" />
+          <h4>З нами спокійно</h4>
+          <p>
+            Наш перекладач буде з Вами протягом всього туру
+          </p>
+        </div>
+        <div class="company__content-part">
+          <img src="image/compani-about/3.png" alt="3" />
+          <h4>Ми-професіонали</h4>
+          <p>
+            Наша компанія не перший рік займається йога-турами
+          </p>
+        </div>
+        <div class="company__content-part">
+          <img src="image/compani-about/4.png" alt="4" />
+          <h4>З нами вигідно</h4>
+          <p>Наш принцип-робити ціни на йога-тури доступними для всіх</p>
+        </div>
+        <div class="company__content-part ">
+          <img src="image/compani-about/5.png" alt="5" />
+          <h4>З нами безпечно</h4>
+          <p>Ви отримуєте повний пакет офіційних туристичних документів</p>
+        </div>
+        <div class="company__content-part ">
+          <img src="image/compani-about/6.png" alt="6" />
+          <h4>З нами зручно</h4>
+          <p>З нами зручно</p>
+        </div>
+      </div>
+    </article>
+
+    <!--======================Розклад==========================-->
+    <article id="tours" class="schedule">
+      <div class="schedule__title title container">
+        <h2>Розклад йога-турів</h2>        
+      </div>
+      <div class="grid4__contents container">
+        <div class="content-1 schedule__content">
+          <p>5-18 жовтня<br /><span>"Зниження ваги"</span></p>
+          <a href="#" class="content__link-1">Докладніше</a>
+          <form action="#" target="_blank" method="post">
+            <button type="submit">Залишити заявку</button>
+          </form>
+        </div>
+        <div class="content-2 schedule__content">
+          <p>5-18 жовтня<br /><span>"Зниження ваги"</span></p>
+          <a href="#" class="content__link-1">Докладніше</a>
+          <form action="#" target="_blank" method="post">
+            <button type="submit">Залишити заявку</button>
+          </form>
+        </div>
+        <div class="content-3 schedule__content">
+         <p>5-18 жовтня<br /><span>"Зниження ваги"</span></p>
+          <a href="#" class="content__link-1">Докладніше</a>
+          <form action="#" target="_blank" method="post">
+            <button type="submit">Залишити заявку</button>
+          </form>
+        </div>
+        <div class="content-4 schedule__content">
+          <p>5-18 жовтня<br /><span>"Зниження ваги"</span></p>
+          <a href="#" class="content__link-1">Докладніше</a>
+          <form action="#" target="_blank" method="post">
+            <button type="submit">Залишити заявку</button>
+          </form>
+        </div>
+        <div class="content-5 schedule__content">
+          <p>5-18 жовтня<br /><span>"Зниження ваги"</span></p>
+          <a href="#" class="content__link-1">Докладніше</a>
+          <form action="#" target="_blank" method="post">
+            <button type="submit">Залишити заявку</button>
+          </form>
+        </div>
+        <div class="content-6 schedule__content">
+          <p>5-18 жовтня<br /><span>"Зниження ваги"</span></p>
+          <a href="#" class="content__link-1">Докладніше</a>
+          <form action="#" target="_blank" method="post">
+            <button type="submit">Залишити заявку</button>
+          </form>
+        </div>
+        <div class="content-7 schedule__content">
+         <p>5-18 жовтня<br /><span>"Зниження ваги"</span></p>
+          <a href="#" class="content__link-1">Докладніше</a>
+          <form action="#" target="_blank" method="post">
+            <button type="submit">Залишити заявку</button>
+          </form>
+        </div>
+        <div class="content-8 schedule__content">
+          <p>5-18 жовтня<br /><span>"Зниження ваги"</span></p>
+          <a href="#" class="content__link-1">Докладніше</a>
+          <form action="#" target="_blank" method="post">
+            <button type="submit">Залишити заявку</button>
+          </form>
+        </div>
+      </div>
+    </article>
+    <!--======================Програма-слайдер 2===========================-->
+    <article class="program">
+      <div class="program__bg"></div>
+      <div class="program__title title container">
+				<h2>Програма</h2>				
+      </div>
+      <div class="slider">
+        <div class="slider__item item1">
+          <img src="image/slider-2/1.jpeg" alt="1" />
+          <div class="slider__item__text">
+            <p>
+              <span>1 день</span><br />Приліт в Тривандрум, трансфер до
+              йога-центру, знайомство, оглядова прогулянка Варкалою,
+              індивідуальна консультація лікаря-аюрведиста.
+            </p>
+          </div>
+        </div>
+        <div class="slider__item item2">
+          <img src="image/slider-2/2.jpeg" alt="2" />
+          <div class="slider__item__text">
+            <p>
+              <span>2 день</span><br />Приліт в Тривандрум, трансфер до
+              йога-центру, знайомство, оглядова прогулянка Варкалою,
+              індивідуальна консультація лікаря-аюрведиста.
+            </p>
+          </div>
+        </div>
+        <div class="slider__item item3">
+          <img src="image/slider-2/3.jpeg" alt="3" />
+          <div class="slider__item__text">
+            <p>
+              <span>3 день</span><br />Приліт в Тривандрум, трансфер до
+              йога-центру, знайомство, оглядова прогулянка Варкалою,
+              індивідуальна консультація лікаря-аюрведиста.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!--======================Аюрведа===========================-->
+    <section id="ayurveda" class="aurveda">
+      <div class="aurveda__title title container">
+        <h2>Що таке аюрведа?</h2>        
+      </div>
+      <div class="aurveda__contents">
+        <div class="aurveda__content container">
+          <div class="aurveda__text">
+            <p>
+              Аюрведа - це найдавніша медична наука в світі, колосальна технологія
             відновлення сил, краси та здоров'я. Вона зародилася на півдні Індії
             5000 років тому і зараз широко поширилася по світу.
-          </p>
-          <p>
-            Аюрведа останнім часом стрімко набирає популярність в Росії і в
-            усьому світі. Аюрведа лікує весь організм в цілому, відновлює
-            порушений баланс між його частинами, видаляючи саму причину хвороби.
+            </p>
+            <p>
+              Аюрведа останнім часом стрімко набирає популярність в Україні і в
+            усьому світі.
+            </p>
+            <p>
+               Аюрведа лікує весь організм в цілому, відновлює порушений баланс між його частинами, видаляючи саму причину хвороби.
             Мета аюрведического методу лікування - зміцнення імунної системи
             організму, профілактика і лікування захворювань за допомогою
             натуральних ліків, які не мають побічних ефектів.
-          </p>
-        </section>
-        <!-- /container -->
-      </div>
-      <!-- programs   ==========================================-->
-      <div class="container">
-        <section class="programs">
-          <h4>
-            Програми аюрведи на 5 днів, 7 днів чи 12 днів:
-          </h4>
-          <ul>
-            <li>
-              <img src="images/programs/1.png" alt="img" />
-              <span>
-                індивідуальна консультація лікаря-аювредіста з перекладом на
+            </p>
+          </div>
+          <div class="aurveda__programs">
+            <h3>Програми аюрведи на 5 днів, 7 днів чи 12 днів:</h3>
+            <div class="program program-1">
+              <div class="program__img wow zoomIn"
+                data-wow-duration="2s"
+                data-wow-offset="50"
+              ></div>
+              <div class="program__tex wow fadeInRight"
+                data-wow-duration="1s"
+                data-wow-offset="50"
+              >
+                <p>
+                  індивідуальна консультація лікаря-аювредіста з перекладом на
                 російську мову, індивідуальне спостереження за курсом лікування
                 лікарем-аюрведистів
-              </span>
-            </li>
-            <li>
-              <img src="images/programs/2.png" alt="img" />
-              <span>
-                масляний масаж всього тіла щодня (60 хвилин) в 2 руки або в 4
+                </p>
+              </div>
+            </div>
+            <div class="program program-2">
+              <div
+                class="program__img wow zoomIn"
+                data-wow-duration="2s"
+                data-wow-offset="50"
+              ></div>
+              <div
+                class="program__tex wow fadeInRight"
+                data-wow-duration="1s"
+                data-wow-offset="50"
+              >
+                <p>
+                   масляний масаж всього тіла щодня (60 хвилин) в 2 руки або в 4
                 руки
-              </span>
-            </li>
-            <li>
-              <img src="images/programs/3.png" alt="img" />
-              <span>
-                дві аюрведичні процедури щодня за Вашим індивідуальним курсом
+                </p>
+              </div>
+            </div>
+            <div class="program program-3">
+              <div
+                class="program__img wow zoomIn"
+                data-wow-duration="2s"
+                data-wow-offset="50"
+              ></div>
+              <div
+                class="program__tex wow fadeInRight"
+                data-wow-duration="1s"
+                data-wow-offset="50"
+              >
+                <p>
+                  дві аюрведичні процедури щодня за Вашим індивідуальним курсом
                 лікування
-              </span>
-            </li>
-            <li>
-              <img src="images/programs/4.png" alt="img" />
-              <span>
-                всі медичні препарати і масла в ході процедур, одяг для процедур
-              </span>
-            </li>
-            <li>
-              <img src="images/programs/5.png" alt="img" />
-              <span>
-                підсумкова консультація лікаря-аюрведистів з планом продовження
-                прийому препаратів будинку, рекомендацій по дієті
-              </span>
-            </li>
-          </ul>
-        </section>
-        <!-- /container -->
-      </div>
-      <!-- au-center ========================================== -->
-      <div class="container">
-        <section class="au-center a-grid">
-          <div class="au-center__gallery">
-            <img src="images/au-center/4LBocmfAmK0.png" alt="img" />
-            <img src="images/au-center/9BGTGkUKVnQ.png" alt="img" />
-            <img src="images/au-center/DSC00794_filtered.png" alt="img" />
-            <img src="images/au-center/NIVV7HIh6UQ.png" alt="img" />
-            <img src="images/au-center/RmI7QlB0Ehg.png" alt="img" />
-            <img src="images/au-center/YNh6krLh61o.png" alt="img" />
-            <img src="images/au-center/z_0ddb5142.png" alt="img" />
-            <img src="images/au-center/z_16ed2a06.png" alt="img" />
-            <img src="images/au-center/z_3bcbdfcb.png" alt="img" />
-            <img src="images/au-center/z_3f5e1e21.png" alt="img" />
-            <img src="images/au-center/z_714a315b.png" alt="img" />
-            <img src="images/au-center/z_8ff9479f.png" alt="img" />
+                </p>
+              </div>
+            </div>
+            <div class="program program-4">
+              <div
+                class="program__img wow zoomIn"
+                data-wow-duration="2s"
+                data-wow-offset="50"
+              ></div>
+              <div
+                class="program__tex wow fadeInRight"
+                data-wow-duration="1s"
+                data-wow-offset="50"
+              >
+                <p>
+                  всі медичні препарати і масла в ході процедур, одяг для процедур
+                </p>
+              </div>
+            </div>
+            <div class="program program-5">
+              <div
+                class="program__img wow zoomIn"
+                data-wow-duration="2s"
+                data-wow-offset="50"
+              ></div>
+              <div
+                class="program__tex wow fadeInRight"
+                data-wow-duration="1s"
+                data-wow-offset="50"
+              >
+                <p>
+                  підсумкова консультація лікаря-аюрведистf з планом продовження
+                прийому препаратів, рекомендації по дієті
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="au-center__description">
-            <h3>
-              Аюрведичний центр
-            </h3>
-            <span>
-              Індія, штат Керала, місто Ваокала
-            </span>
+        </div>
+      </div>
+      <!--======================Аюрведа галерея===========================-->
+      <div class="block2 aurveda__center container">
+        <div class="aurveda__center__bg"></div>
+        <div class="grid-gall">
+          <a data-fancybox="gallery" href="image/gelery/big/1.jpeg"
+            ><img src="image/gelery/small/1.jpg" alt="1"
+          /></a>
+          <a data-fancybox="gallery" href="image/gelery/big/2.jpeg"
+            ><img src="image/gelery/small/2.jpg" alt="2"
+          /></a>
+          <a data-fancybox="gallery" href="image/gelery/big/3.jpeg"
+            ><img src="image/gelery/small/3.jpg" alt="3"
+          /></a>
+          <a data-fancybox="gallery" href="image/gelery/big/4.jpeg"
+            ><img src="image/gelery/small/4.jpg" alt="4"
+          /></a>
+          <a data-fancybox="gallery" href="image/gelery/big/5.jpeg"
+            ><img src="image/gelery/small/5.jpg" alt="5"
+          /></a>
+          <a data-fancybox="gallery" href="image/gelery/big/6.jpeg"
+            ><img src="image/gelery/small/6.jpg" alt="6"
+          /></a>
+          <a data-fancybox="gallery" href="image/gelery/big/7.jpeg"
+            ><img src="image/gelery/small/7.jpg" alt="7"
+          /></a>
+          <a data-fancybox="gallery" href="image/gelery/big/8.jpeg"
+            ><img src="image/gelery/small/8.jpg" alt="8"
+          /></a>
+          <a data-fancybox="gallery" href="image/gelery/big/9.jpeg"
+            ><img src="image/gelery/small/9.jpg" alt="9"
+          /></a>
+          <a data-fancybox="gallery" href="image/gelery/big/10.jpeg"
+            ><img src="image/gelery/small/10.jpg" alt="10"
+          /></a>
+          <a data-fancybox="gallery" href="image/gelery/big/11.jpeg"
+            ><img src="image/gelery/small/11.jpg" alt="11"
+          /></a>
+          <a data-fancybox="gallery" href="image/gelery/big/12.jpeg"
+            ><img src="image/gelery/small/12.jpg" alt="12"
+          /></a>
+        </div>
+        <div
+          class="center__text wow fadeInRight"
+          data-wow-duration="1s"
+          data-wow-offset="300"
+        >
+          <div class="text">
+            <h2>Аюрведичний центр</h2>
+            <p><span>Індія, штат Керала, місто Варкала</span></p>
             <p>
               Ми будемо жити не просто в готелі, а в спеціалізованому
-              аюрведичній центрі «Алісера». Тут все проходять лікування або
+              аюрведичному центрі «Алісера». Тут всі проходять лікування або
               займаються йогою - це тихе і закрите для сторонніх відпочиваючих
               людей містечко.
             </p>
             <p>
-              Центр знаходиться на першій пляжної лінії в зеленому і спокійному
-              місці, віддалік від галасливих барів і магазинів.
+              Центр знаходиться на першій пляжній лінії в зеленому і спокійному
+              місці, віддалено від галасливих барів і магазинів.
             </p>
             <p>
               Цей аюрведичний центр вже 5 років адмініструють фахівці - це
               значить, що вони намагаються забезпечити сервіс на рівні, звичному
-              туристу. Вас не шокує бруд і антисанітарія Індії, якій багато хто
+              туристу. Вас не шокує бруд і антисанітарія Індії, яку багато хто
               боїться, що не буде непорозумінь з персоналом, їжа буде адаптована
               для звичного смаку українського туриста і т.д. У центрі постійно є
               перекладач з англійської на українську мову. Відпочивають тут в
               основному гості з України - тому завжди можна знайти цікаве
               спілкування, якщо ви приїхали один або маленькою компанією.
             </p>
-            <div class="au-center__conditions">
-              <ul>
-                <li>
-                  кімнати категорії «стандарт» і «підвищеної комфортності» з
-                  санвузлом і гарячою водою
-                </li>
-                <li>
-                  власна територія з пальмами, гамаками і зонами для відпочинку
-                </li>
-                <li>
-                  басейн
-                </li>
-                <li>
-                  критий зал для йоги
-                </li>
-                <li>
-                  вегетаріанське аюрведічеськоє кафе
-                </li>
-                <li>
-                  аюрведичні кабінети
-                </li>
-                <li>
-                  власний пляж
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  Wi-Fi на всій території безкоштовно
-                </li>
-                <li>
-                  україномовний адміністратор
-                </li>
-                <li>
-                  туристичний офіс - квитки, екскурсії і т.д.
-                </li>
-                <li>
-                  цілодобовий прийом до лікаря
-                </li>
-                <li>
-                  оренда скутерів
-                </li>
-                <li>
-                  замовлення таксі
-                </li>
-                <li>
-                  сейф
-                </li>
-              </ul>
-            </div>
           </div>
-        </section>
-      </div>
-      <!-- contacts ========================================== -->
-      <div class="container">
-        <section class="contacts-grid">
-          <h4>Контакти</h4>
-          <div class="contacts-grid__items">
-            <span>Ми в соціальних мережах</span>
+          <div class="list">
             <ul>
               <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
+                кімнати категорії «стандарт» і «підвищеної комфортності» з
+                  санвузлом і гарячою водою
               </li>
               <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
+                власна територія з пальмами, гамаками і зонами для відпочинку
               </li>
-              <li>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-              </li>
+              <li>басейн</li>
+              <li>критий зал для йоги</li>
+              <li>вегетаріанське аюрведичне кафе</li>
+              <li>аюрведичні кабінети</li>
+              <li>власний пляж</li>
+            </ul>
+            <ul>
+              <li>Wi-Fi на всій території безкоштовно</li>
+              <li>україномовний адміністратор</li>
+              <li>туристичний офіс - квитки, екскурсії і т.д.</li>
+              <li>цілодобовий прийом лікаря</li>
+              <li>оренда скутерів</li>
+              <li>замовлення таксі</li>
+              <li>сейф</li>
             </ul>
           </div>
-          <div class="contacts_phone">
-            <span>Телефон:</span>
-            <p>
-              Звінки від всіх операторів України безкоштовні
-            </p>
-            <span>800 111 555 777</span>
-          </div>
-          <div>
-            <a href="#">
-              <img src="images/contacts/map-1.png" alt="map" />
-              <p>м. Київ, вул. Шевченка 1а</p>
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img src="images/contacts/map-2.png" alt="map" />
-              <p>м. Львів, вул. Бандери 33</p>
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img src="images/contacts/map-3.png" alt="map" />
-              <p>м. Одеса, вул. Грушевського 5</p>
-            </a>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="wrapper">
-        <div class="container">
-          <section class="f-grid">
-            <div class="footer__left">
-              <a href="#"><img src="images/logo.png" alt="logo" /></a>
-              <div class="footer__site">
-                <p>
-                  Всі наші йога-тури на головному сайті
-                </p>
-                <a href="#">www.yogaindia.com</a>
-              </div>
-            </div>
-            <div class="footer__doc">
-              <span>
-                ТОВ "Аюрведа Україна"
-              </span>
-              <p>
-                свідоцтво реєстрації № 43567489653487 від 1 січня 2010 року.
-              </p>
-            </div>
-          </section>
-
-          <!-- /conteiner -->
         </div>
-        <!-- /wrapper -->
+      </div>
+    </section>
+    <!--======================Інструктори===========================-->
+    <article class="instructors">
+      <div class="aurveda__title title container">
+        <h2>Інструктори</h2>       
+      </div>
+      <div class="instructors__bg"></div>
+      <div class="slider__instructors container">
+        <div class="instructor instructor-1">
+          <img src="image/instructors/1.jpeg" alt="Юлия Ухваткина" />
+          <div class="text-1 instructor__text">
+            <div class="text__title">
+              <h3>Юлія Ухваткіна</h3>
+              <p>Хатха-йога<br />Шри-шри йога</p>
+            </div>
+            <div class="text__info">
+              <p>
+                Міжнародний індійський сертифікат учителя йоги: VED VIGNAN MAHA
+                VIDYA PEETH.
+              </p>
+              <p>
+                Щорічно проходить курси з  підвишення кваліфікації в Україні та в
+                Індії.
+              </p>
+              <p>Перекладач з английської мови</p>
+            </div>
+          </div>
+        </div>
+        <div class="instructor instructor-3">
+          <img src="image/instructors/1.jpeg" alt="Юлия Ухваткина" />
+          <div class="text-2 instructor__text">
+             <div class="text__title">
+              <h3>Юлія Ухваткіна</h3>
+              <p>Хатха-йога<br />Шри-шри йога</p>
+            </div>
+            <div class="text__info">
+              <p>
+                Міжнародний індійський сертифікат учителя йоги: VED VIGNAN MAHA
+                VIDYA PEETH.
+              </p>
+              <p>
+                Щорічно проходить курси з  підвишення кваліфікації в Україні та в
+                Індії.
+              </p>
+              <p>Перекладач з английської мови</p>
+            </div>
+          </div>
+        </div>
+        <div class="instructor instructor-3">
+          <img src="image/instructors/1.jpeg" alt="Юлия Ухваткина" />
+          <div class="text-3 instructor__text">
+             <div class="text__title">
+              <h3>Юлія Ухваткіна</h3>
+              <p>Хатха-йога<br />Шри-шри йога</p>
+            </div>
+            <div class="text__info">
+              <p>
+                Міжнародний індійський сертифікат учителя йоги: VED VIGNAN MAHA
+                VIDYA PEETH.
+              </p>
+              <p>
+                Щорічно проходить курси з  підвишення кваліфікації в Україні та в
+                Індії.
+              </p>
+              <p>Перекладач з английської мови</p>
+            </div>
+          </div>
+        </div>
+        <div class="instructor instructor-4">
+          <img src="image/instructors/1.jpeg" alt="Юлия Ухваткина" />
+          <div class="text-4 instructor__text">
+             <div class="text__title">
+              <h3>Юлія Ухваткіна</h3>
+              <p>Хатха-йога<br />Шри-шри йога</p>
+            </div>
+            <div class="text__info">
+              <p>
+                Міжнародний індійський сертифікат учителя йоги: VED VIGNAN MAHA
+                VIDYA PEETH.
+              </p>
+              <p>
+                Щорічно проходить курси з  підвишення кваліфікації в Україні та в
+                Індії.
+              </p>
+              <p>Перекладач з английської мови</p>
+            </div>
+          </div>
+        </div>
+        <div class="instructor instructor-5">
+          <img src="image/instructors/1.jpeg" alt="Юлия Ухваткина" />
+          <div class="text-5 instructor__text">
+             <div class="text__title">
+              <h3>Юлія Ухваткіна</h3>
+              <p>Хатха-йога<br />Шри-шри йога</p>
+            </div>
+            <div class="text__info">
+              <p>
+                Міжнародний індійський сертифікат учителя йоги: VED VIGNAN MAHA
+                VIDYA PEETH.
+              </p>
+              <p>
+                Щорічно проходить курси з  підвишення кваліфікації в Україні та в
+                Індії.
+              </p>
+              <p>Перекладач з английської мови</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider__instructors container">
+        <div class="instructor instructor-1">
+          <img src="image/instructors/2.jpeg" alt="Сем Джон" />
+          <div class="text-1 instructor__text">
+            <div class="text__title">
+              <h3>Сем Джон</h3>
+              <p>Індія. Шри-шри йога.<br />Курс «Щастя»</p>
+            </div>
+            <div class="text__info">
+              <p>Больше 10 років проводить тренінги з йоги по всій Індії.</p>
+              <p>
+                З 2009-го року - викладач йоги міжнародного фонду Art of
+                living.
+              </p>
+              <p>Навчає пранаямі, дихальним технікам і медитації.</p>
+              <p>Читає лекції про теорію та філософію йоги.</p>
+            </div>
+          </div>
+        </div>
+        <div class="instructor instructor-3">
+          <img src="image/instructors/2.jpeg" alt="Сем Джон" />
+          <div class="text-2 instructor__text">
+            <div class="text__title">
+              <h2>Сем Джон</h2>
+              <p>Індія. Шри-шри йога.<br />Курс «Щастя»</p>
+            </div>
+            <div class="text__info">
+          </div>
+        </div>
+        <div class="instructor instructor-3">
+          <img src="image/instructors/2.jpeg" alt="Сем Джон" />
+          <div class="text-3 instructor__text">
+            <div class="text__title">
+              <h3>Сем Джон</h3>
+              <p>Індія. Шри-шри йога.<br />Курс «Щастя»</p>
+            </div>
+            <div class="text__info">
+          </div>
+        </div>
+        <div class="instructor instructor-4">
+          <img src="image/instructors/2.jpeg" alt="Сем Джон" />
+          <div class="text-4 instructor__text">
+            <div class="text__title">
+              <h3>Сем Джон</h3>
+              <p>Індія. Шри-шри йога.<br />Курс «Щастя»</p>
+            </div>
+            <div class="text__info">
+          </div>
+        </div>
+        <div class="instructor instructor-5">
+          <img src="image/instructors/2.jpeg" alt="Сем Джон" />
+          <div class="text-5 instructor__text">
+            <div class="text__title">
+              <h3>Сем Джон</h3>
+              <p>Індія. Шри-шри йога.<br />Курс «Щастя»</p>
+            </div>
+            <div class="text__info">
+          </div>
+        </div>
+      </div>
+    </article>
+    <!--======================Відгуки===========================-->
+    <article class="coments">
+      <div class="aurveda__title title container">
+        <h2>Відгуки учасників</h2>        
+      </div>
+      <div class="slider__coments container">
+        <div class="coment coment-1">
+          <div class="coment__img">
+            <img class="ibg" src="image/coments/1.jpeg" alt="Участник" />
+          </div>
+          <div class="coment__text">
+            <h4>Дмитро <span>Жигарєв</span></h4>
+            <a href="#">facebook.com/zhigarev_dmitrii</a>
+            <p id="modal-1">
+              
+							Мені, як завжди в цьому житті щастить на зустрічі з цікавими
+              людьми. Було дуже приємно потрапити в таку гарну компанію
+              щирих, позитивних і цікавих людей. Індія класна країна ...
+              цікаво було познайомитися з такою культурою. іноді вона
+              шокує, іноді викликають посмішку і здивування, але я побажав би
+              кожному побувати в цій екстраординарної країні. Я відпочив і
+              душею і тілом. Постараюся приїхати туди ще не раз ...
+            </p>
+            <a
+              class="link__coment"
+              data-fancybox
+              data-src="#modal-1"
+              href="javascript:;"
+              ><span>Коментарі...</span></a
+            >
+          </div>
+        </div>
+        <div class="coment coment-2">
+          <div class="coment__img">
+            <img src="image/coments/1.jpeg" alt="Участник" />
+          </div>
+          <div class="coment__text">
+            <h3>Дмитро <span>Жигарєв</span></h3>
+            <a href="#">facebook.com/zhigarev_dmitrii</a>
+            <p id="modal-1">
+              
+							Мені, як завжди в цьому житті щастить на зустрічі з цікавими
+              людьми. Було дуже приємно потрапити в таку гарну компанію
+              щирих, позитивних і цікавих людей. Індія класна країна ...
+              цікаво було познайомитися з такою культурою. іноді вона
+              шокує, іноді викликають посмішку і здивування, але я побажав би
+              кожному побувати в цій екстраординарної країні. Я відпочив і
+              душею і тілом. Постараюся приїхати туди ще не раз ...
+            </p>
+            <a
+              class="link__coment"
+              data-fancybox
+              data-src="#modal-1"
+              href="javascript:;"
+              ><span>Коментарі...</span></a
+            >
+          </div>
+        </div>
+        <div class="coment coment-3">
+          <div class="coment__img">
+            <img src="image/coments/1.jpeg" alt="Участник" />
+          </div>
+          <div class="coment__text">
+            <h3>Дмитро <span>Жигарєв</span></h3>
+            <a href="#">facebook.com/zhigarev_dmitrii</a>
+            <p id="modal-1">
+              
+							Мені, як завжди в цьому житті щастить на зустрічі з цікавими
+              людьми. Було дуже приємно потрапити в таку гарну компанію
+              щирих, позитивних і цікавих людей. Індія класна країна ...
+              цікаво було познайомитися з такою культурою. іноді вона
+              шокує, іноді викликають посмішку і здивування, але я побажав би
+              кожному побувати в цій екстраординарної країні. Я відпочив і
+              душею і тілом. Постараюся приїхати туди ще не раз ...
+            </p>
+            <a
+              class="link__coment"
+              data-fancybox
+              data-src="#modal-1"
+              href="javascript:;"
+              ><span>Коментарі...</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </article>    
+    <!--======================Pобота компанії===========================-->
+    <article
+      class="work wow fadeInLeft"
+      data-wow-duration="2s"
+      data-wow-offset="300"
+    >
+      <div class="work__title title container">
+        <h2>Як ми працюємо</h2>        
+      </div>
+      <div class="work__content container">
+        <div class="worck__title-2">
+          <h3>Можливе оформлення йога-туру дистанційно з будь-якого міста</h3>
+        </div>
+        <div class="grid6-line ">
+          <div class="work__info work__info-1">
+            <img src="image/work/1.png" alt="1" />
+            <img src="image/work/1.1.png" alt="1.1" />
+            <p>Ви залишаєте заявку</p>
+            <a href="#"><span>Відправити заявку</span></a>
+          </div>
+          <div class="work__info work__info-2">
+            <img src="image/work/2.png" alt="2" />
+            <img src="image/work/1.1.png" alt="1.1" />
+            <p>Ми зв'яжемося з вами</p>
+          </div>
+          <div class="work__info work__info-3">
+            <img src="image/work/3.png" alt="3" />
+            <img src="image/work/1.1.png" alt="1.1" />
+            <p>Підписуємо договір та оформляємо документи</p>
+          </div>
+          <div class="work__info work__info-4">
+            <img src="image/work/4.png" alt="4" />
+            <img src="image/work/1.1.png" alt="1.1" />
+            <p>Ви оплачуєте аванс 3 000 гривень в банку</p>
+          </div>
+          <div class="work__info work__info-5">
+            <img src="image/work/5.png" alt="5" />
+            <img src="image/work/1.1.png" alt="1.1" />
+            <p>Купуєте білети та оформляєте візу (можливо через нас)</p>
+          </div>
+          <div class="work__info work__info-6">
+            <img src="image/work/6.png" alt="6" />
+            <p>Вас зустрічають в аеропорту Тривандрумс табличкою</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!--======================Вартість===========================-->
+    <article class="price">
+      <div class="price__title title container">
+        <h2>Вартість</h2>        
+      </div>
+      <div class="price__container">
+        <div class="price__content">
+          <div class="price__content-1">
+            <p>
+              <span>Тур 14 днів/13 ночей, </span>програма аюрведи на 5 днів
+            </p>
+            <a href="#"><span>700</span> євро </a>
+          </div>
+          <div class="price__content-2">
+            <p>
+              <span>Тур 14 днів/13 ночей, </span>програма аюрведи на 7 днів
+            </p>
+            <a href="#"><span>770</span> евро</a>
+          </div>
+          <div class="price__content-3">
+            <p>
+              <span>Тур 14 днів/13 ночей, </span>програма аюрведи на 12 днів
+            </p>
+            <a href="#"><span>960</span> євро</a>
+          </div>
+        </div>
+        <div class="price__spec-content">
+          <p>Дізнайтесь про спецпропозиції економ-туру за 250 євро</p>
+          <form action="#" method="post">
+            <button type="submit">Дізнатися</button>
+          </form>
+        </div>
+        <div class="list-on">
+          <h3>У вартість входить:</h3>
+          <ul>
+            <li>
+              проживання 2-х містне в кімнаті "стандарт" з санвузлом і гарячою
+              водою,
+            </li>
+            <li>харчування триразове вегетаріанське,</li>
+            <li>йога-програма - 3 заняття йоги на день (практика і теорія),</li>
+            <li>аюрведична програма на 5 днів, 7 днів або 12 днів,</li>
+            <li>              
+індивідуальний трансфер на таксі з аеропорту до готелю і назад,
+            </li>
+            <li>супровід групи україномовним викладачем</li>
+            <li>теоретичні заняття з аюрведи,</li>
+            <li>дві екскурсії.</li>
+          </ul>
+        </div>
+        <div class="list-off">
+          <h3>У вартість НЕ входить:</h3>
+          <ul>
+            <li>переліт Київ-Тируванантапурам-Київ (від 10 000 гривень),</li>
+            <li>віза (3000 гривень).</li>
+          </ul>
+        </div>
+        <div class="price__info">
+          <p>
+            Вартість розраховується в євро через нестабільний курс гривні.
+            Оплата на місці можлива в будь-якій валюті - гривні,рублі, євро, долари.
+          </p>
+        </div>
+      </div>
+    </article>
+    <!--======================Гарантії===========================-->
+    <article class="documents">
+      <div class="documents__title title container">
+        <h2>Гарантія безпеки</h2>        
+      </div>
+      <div class="documents__content container">
+        <p>
+          Ми розуміємо, що багато туристів побоюються оплачувати тури і бояться,
+          що тур скасується. Тому ми зробили бронювання безпечним для вас.
+          Щоб забронювати місце на йога-турі необхідно будь-яким зручним
+          способом внести аванс 3000 гривень. Решту суми ви оплачуєте в
+          будь-якій валюті (гривні,рублі, євро, долари) по прибуттю в готель, після
+          заселення.
+        </p>
+        <h3>Ви отримаєте повний набір документів:</h3>
+        <div class="documents__img">
+          <div class="documents__img-1">
+            <span><img src="image/documents/1.jpeg" alt="1" /></span>
+            <p>Договір на надання послуг</p>
+          </div>
+          <div class="documents__img-2">
+            <span><img src="image/documents/2.jpeg" alt="2" /></span>
+            <p>Чек про оплату авансу</p>
+          </div>
+          <div class="documents__img-3">
+            <span><img src="image/documents/3.jpeg" alt="3" /></span>
+            <p>Бронь готелю</p>
+          </div>
+          <div class="documents__img-4">
+            <span><img src="image/documents/4.jpeg" alt="4" /></span>
+            <p>Туристичний сертифікат</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!--======================Контакти===========================-->
+    <article id="contacts" class="contakts">
+      <div class="contakts__container container">
+        <div class="contakts__info">
+          <h2>Контакти</h2>
+          <p>Ми в соціальних мережах:</p>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="image/contakts/facebook.png" alt="facebook"
+          /></a>
+          <!-- <a href="https://www.vk.com/" target="_blank"
+            ><img src="image/contakts/vk.png" alt="vk"
+          /></a> -->
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="image/contakts/instagram.png" alt="instagram"
+          /></a>
+        </div>
+        <div class="contakts__phone">
+          <h4>Телефон:</h4>
+          <p>Дзвінки з усіх операторів України безкоштовні</p>
+          <h3>800 111 555 777</h3>
+        </div>
+      </div>
+      <div class="maps container">
+        <h4>Офіси:</h4>
+        <div class="map-1">
+          <!-- <a
+            href="https://www.google.com/maps/place/%D0%A2%D0%A1%D0%96+%22%D0%92%D0%B0%D0%B9%D0%BD%D0%B5%D1%80%D0%B0+60%22/@56.8281867,60.5956078,18z/data=!4m5!3m4!1s0x43c16ef21994ca03:0x9070074bc962fe18!8m2!3d56.828373!4d60.5969013?hl=ru-RU"
+            target="_blank"
+            ><img src="image/contakts/map-1.jpg" alt="map"
+          /></a>
+          <a
+            href="https://www.google.com/maps/place/%D0%A2%D0%A1%D0%96+%22%D0%92%D0%B0%D0%B9%D0%BD%D0%B5%D1%80%D0%B0+60%22/@56.8281867,60.5956078,18z/data=!4m5!3m4!1s0x43c16ef21994ca03:0x9070074bc962fe18!8m2!3d56.828373!4d60.5969013?hl=ru-RU"
+            target="_blank"
+            ><span>Екатеринбург, ул Вайнера 60</span></a
+					> -->
+					 <a href="#" target="_blank">
+              <img src="image/contakts/map-1.png" alt="map" />
+              <span>м. Київ, вул. Шевченка 1а</span>
+            </a>
+        </div>
+        <div class="map-2">
+          <!-- <a
+            href="https://www.google.com/maps/place/%D0%9B%D0%B8%D1%82%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9+%D0%BF%D1%80.,+29,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+191028/@59.9417937,30.3457963,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310ab1bf592f:0x27e6d7be1102eb4d!8m2!3d59.941791!4d30.347985?hl=ru-RU"
+            target="_blank"
+            ><img src="image/contakts/map-2.jpg" alt="map"
+          /></a>
+          <a
+            href="https://www.google.com/maps/place/%D0%9B%D0%B8%D1%82%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9+%D0%BF%D1%80.,+29,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+191028/@59.9417937,30.3457963,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310ab1bf592f:0x27e6d7be1102eb4d!8m2!3d59.941791!4d30.347985?hl=ru-RU"
+            target="_blank"
+            ><span>Санкт-Петербург, пер. Литейный 29</span></a
+					> -->
+					<a href="#" target="_blank">
+              <img src="image/contakts/map-2.png" alt="map" />
+              <span>м. Львів, вул. Бандери 33</span>
+            </a>
+        </div>
+        <div class="map-3">
+          <!-- <a
+            href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%94%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D0%B8%D1%81%D1%82%D0%BE%D0%B2,+161,+%D0%A1%D0%BE%D1%87%D0%B8,+%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80%D1%81%D0%BA%D0%B8%D0%B9+%D0%BA%D1%80%D0%B0%D0%B9,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+354208/@43.6862951,39.5955159,17z/data=!3m1!4b1!4m5!3m4!1s0x40f433fadb6dfcd7:0xac9beea145c615ea!8m2!3d43.6862912!4d39.5977046?hl=ru-RU"
+            target="_blank"
+            ><img src="image/contakts/map-3.jpg" alt="map"
+          /></a>
+          <a
+            href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%94%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D0%B8%D1%81%D1%82%D0%BE%D0%B2,+161,+%D0%A1%D0%BE%D1%87%D0%B8,+%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80%D1%81%D0%BA%D0%B8%D0%B9+%D0%BA%D1%80%D0%B0%D0%B9,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+354208/@43.6862951,39.5955159,17z/data=!3m1!4b1!4m5!3m4!1s0x40f433fadb6dfcd7:0xac9beea145c615ea!8m2!3d43.6862912!4d39.5977046?hl=ru-RU"
+            target="_blank"
+            ><span>Сочи, ул Декабристов 161/2</span></a
+					> -->
+					<a href="#" target="_blank">
+              <img src="image/contakts/map-3.png" alt="map" />
+              <span>м. Одеса, вул. Грушевського 5</span>
+            </a>
+        </div>
+      </div>
+    </article>
+    </main>
+    <!--======================Footer===========================-->
+    <footer>
+      <div class="footer container">
+        <div class="logo__footer">
+          <img src="image/footer/big-logo.png" alt="logo" />
+          <div class="logo__link">
+            <p>Всі наші йога-тури на головному сайті</p>
+            <a href="https://yogamore.ru/" target="_blank">www.yogaindia.com</a>
+          </div>
+        </div>
+        <div class="footer__tekst">
+          <p>ТОВ "Аюрведа Україна"</p>
+          <p>свідоцтво реєстрації № 43567489653487 від 1 січня 2010 року.</p>
+          <p>© 2020 All rights reserved. "Victory" team.</p>
+        </div>
       </div>
     </footer>
+    <script type="text/javascript" src="Js/Jquery3.4.1.js"></script>
+    <script type="text/javascript" src="Js/slick.min.js"></script>
+    <script type="text/javascript" src="Js/jquery.fancybox.min.js"></script>
+    <!-- Галерея -->
+    <script type="text/javascript" src="Js/wow.min.js"></script>
+    <!-- Анимация -->
+    <script>
+      new WOW().init();
+    </script>
+    <script type="text/javascript" src="Js/main.js"></script>
   </body>
 </html>
